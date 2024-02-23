@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+
+/* 네비게이션 */
+
+header{
+    width: 100%;
+    height: 100px;
+    background-color: var(--darkred);
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    position: relative;
+}
+header::after{
+    content: "";
+    width: 100%;
+    top: 100px;
+    left: 0;
+    height: 0px;
+    background-color: var(--darkred);
+    position: absolute; 
+    z-index: 1;
+    transition: all 1.3s;
+    opacity: 0.8;
+}
+header.on::after{
+    height: 220px;
+}
+header .icon{
+    background-color: aqua;
+    height: 100%;
+    width: 250px;
+}
+.nav{
+    width: 60%;
+    height: 100%;
+    z-index: 1000;
+}
+.nav>ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: right;
+
+}
+.nav>ul>li{
+    width: 15%;
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+.nav>ul>li>a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+   font-size: var(--size-m);
+    color: var(--beige);
+}
+.nav>ul>li>ul{
+    position: absolute;
+    top: 90px;
+    width: 100%;
+    padding: 10px;
+    display: none;
+}
+.nav>ul>li>ul>li>a{
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    font-size: var(--size-s);
+    color: var(--beige);
+}
+.nav ul li a:hover{
+    font-weight: var(--weight-b);
+}
+
+/* 풋터 */
+footer{
+    width: 100%;
+    height: 400px;
+    background-color: var(--lightred);
+ 
+}
+footer .container{
+    display: flex;
+    flex-flow: row wrap;
+}
+#discount{
+    width: 50%;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 3%;
+}
+#discount h3{
+    width: 100%;
+    font-size: var(--size-m);
+    color:var(--beige);
+}
+#discount input{
+    width: 80%;
+}
+#discount button{
+    width: 30%;
+}
+#discount .sns{
+    width: 40%;
+    background-color: aqua;
+}
+#footerNav{
+    width: 50%;
+    display: flex;
+    padding: 3%;
+}
+#footerNav{
+    width: 50%;
+}
+#copyrights{
+    width: 100%;
+    padding: 3%;
+}

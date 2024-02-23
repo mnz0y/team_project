@@ -1,0 +1,671 @@
+@charset "utf-8";
+
+
+/* 데스크탑 */
+@media (min-width:1100px) and (max-width:1516px) {
+
+    /* 홈 */
+    #home .container {
+        width: 100%;
+    }
+
+    /* 뉴스 */
+    #news .container {
+        width: 100%;
+        padding: 0 2%;
+    }
+
+    #news .textBox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 45px;
+        letter-spacing: 5px;
+    }
+
+
+
+    /* 어바웃 */
+    #about {
+        position: relative;
+
+    }
+
+    #about .container {
+        width: 100%;
+        padding: 0 2%;
+    }
+
+    .lpBox {
+        width: 350px;
+        height: 350px;
+        margin: 0 auto;
+    }
+
+    .lpBox img {
+        width: 100%;
+        height: 100%;
+    }
+
+    #about .aboutText p:nth-child(1) {
+        font-size: 22px;
+    }
+
+    #about .aboutText p:nth-child(2) {
+        font-size: 20px;
+        line-height: 40px;
+        display: flex;
+        align-items: center;
+    }
+
+    #about .aboutText2 {
+        width: 100%;
+        padding: 0 2%;
+        position: absolute;
+        bottom: 0;
+    }
+
+    .aboutText2 dt {
+        font-size: 35px;
+    }
+
+    .aboutText2 dd {
+        font-size: 30px;
+    }
+
+
+    /* 타임테이블 */
+
+    #timetable {
+        padding: 100px 2%;
+
+    }
+
+    #timetable .container {
+        width: 100%;
+    }
+
+
+    .left {
+        margin: 100px 0 0 80px;
+        width: 400px;
+        height: 400px;
+    }
+
+    .right {
+        margin: 100px 80px 0 0;
+        width: 400px;
+        height: 400px;
+        text-align: center;
+        transition: 1.5s;
+        position: relative;
+        transform-style: preserve-3d;
+        cursor: pointer;
+    }
+
+    #timetable img {
+        width: 400px;
+        height: 400px;
+    }
+
+
+    /* 아티스트 */
+
+
+    #artist h2 {
+        padding: 0 2%;
+        width: 100%;
+    }
+
+
+    /* 콘텐츠 */
+
+    #content {
+        height: auto;
+        padding: 100px 2%;
+    }
+
+    #content .container {
+        width: 100%;
+
+    }
+
+}
+
+
+
+/* 테블릿사이즈 */
+@media (min-width:850px) and (max-width:1099px) {
+
+
+    /* 홈 */
+
+
+    #home {
+        height: auto;
+    }
+
+    #home .container {
+        width: 100%;
+    }
+
+    #home .container img {
+        height: auto;
+    }
+
+
+    /* 뉴스 */
+
+
+    #news {
+        height: auto;
+    }
+
+    #news .container {
+        width: 100%;
+        padding: 0 2%;
+    }
+
+
+    #news .textBox {
+        font-size: 31px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+
+
+    /* 어바웃 */
+
+    #about {
+        position: relative;
+        height: 2000px;
+    }
+
+    #about .container {
+        width: 100%;
+        padding: 0 2%;
+    }
+
+    .lpBox {
+        width: 300px;
+        height: 300px;
+        margin: 0 auto;
+
+    }
+
+    .lpBox img {
+        width: 100%;
+        height: 100%;
+    }
+
+    #about .aboutText {
+        display: flex;
+        flex-flow: row wrap;
+        margin-top: 2%;
+        overflow: hidden;
+    }
+
+    #about .aboutText p {
+        margin: 1% 0;
+    }
+
+    #about .aboutText p:nth-child(1) {
+        font-size: 18px;
+    }
+
+    #about .aboutText p:nth-child(2) {
+        font-size: 16px;
+        line-height: 40px;
+        display: flex;
+        align-items: center;
+    }
+
+    #about .aboutText p:nth-child(4) {
+        font-size: 16px;
+    }
+
+    #about .aboutText p:nth-child(5) {
+        font-size: 16px;
+    }
+
+    #about .aboutText2 {
+        position: absolute;
+        bottom: 0;
+        height: 300px;
+        padding: 0 2%;
+    }
+
+    .aboutText2 dl {
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+        width: 100%;
+        height: 30%;
+
+    }
+
+    .aboutText2 dt {
+        font-size: 25px;
+    }
+
+    .aboutText2 dd {
+        font-size: 20px;
+    }
+
+    .aboutText2 dl:nth-child(2) dt {
+        padding: 0;
+    }
+
+
+
+    /* 타임테이블 */
+
+    #timetable {
+        width: 100%;
+        height: auto;
+        padding: 100px 2%;
+    }
+
+    #timetable .container {
+        width: 100%;
+        display: flex;
+        flex-flow: wrap;
+        justify-content: space-around;
+
+    }
+
+    #timetable h2 {
+        width: 100%;
+
+    }
+
+    .left {
+        width: 350px;
+        height: 350px;
+        margin-left: 2%;
+    }
+
+    .right {
+        margin-right: 2%;
+        width: 350px;
+        height: 350px;
+    }
+
+    #timetable img {
+        width: 100%;
+        height: 100%;
+    }
+
+
+    /* 아티스트 */
+    #artist {
+        height: auto;
+    }
+
+    #artist h2 {
+        width: 100%;
+        padding: 0 2%;
+    }
+
+    /* 콘텐츠 */
+
+    #content {
+        height: auto;
+        padding: 100px 2%;
+    }
+
+    #content .container {
+        width: 100%;
+    }
+
+    #content h2 {
+        width: 100%;
+    }
+
+}
+
+
+/* 모바일 사이즈 */
+@media (max-width:849px) {
+    
+    /* 홈 */
+
+    #home {
+        height: auto;
+    }
+
+    #home .container {
+        width: 100%;
+    }
+
+    #home .container img {
+        margin-top: 100px;
+        height: auto;
+    }
+
+
+    /* 뉴스 */
+
+
+    #news {
+        height: auto;
+    }
+
+    #news h2 {
+        font-size: 25px;
+    }
+
+    #news .container {
+        width: 100%;
+        padding: 0 2%;
+        position: relative;
+    }
+
+
+    #news .textBox {
+        width: 100%;
+        position: absolute;
+        font-size: 5vw;
+        top: 20%;
+        transition: all 1s;
+    }
+
+    #news .videoBox {
+        width: 100%;
+
+    }
+
+
+    /* 어바웃 */
+
+    #about {
+        position: relative;
+        height: 2200px;
+    }
+
+    #about h2 {
+        font-size: 25px;
+    }
+
+    #about .container {
+        width: 100%;
+        padding: 0 2%;
+    }
+
+    .lpBox {
+        width: 300px;
+        height: 300px;
+        margin: 0 auto;
+    }
+
+    .lpBox img {
+        width: 100%;
+        height: 100%;
+    }
+
+    #about .aboutText {
+        display: flex;
+        flex-flow: row wrap;
+        margin-top: 2%;
+        overflow: hidden;
+    }
+
+    #about .aboutText p {
+        margin: 2% 0;
+    }
+
+    #about .aboutText p:nth-child(1) {
+        text-align: center;
+        width: 100%;
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    #about .aboutText p:nth-child(2) {
+        width: 100%;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 30px;
+        font-family: "Hahmlet", serif;
+    }
+
+    #about .aboutText p:nth-child(4) {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    #about .aboutText p:nth-child(5) {
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    #about .aboutText2 {
+        position: absolute;
+        bottom: 0;
+        height: 250px;
+        padding: 0 2%;
+        display: flex;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+    .aboutText2 dl {
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+        width: 100%;
+        height: 30%;
+
+    }
+
+    .aboutText2 dt {
+        font-size: 18px;
+    }
+
+    .aboutText2 dd {
+        font-size: 16px;
+    }
+
+    .aboutText2 dl:nth-child(2) dt {
+        padding: 0;
+    }
+
+
+
+    /* 타임테이블 */
+
+    #timetable {
+        width: 100%;
+        height: auto;
+        padding: 100px 2%;
+    }
+
+    #timetable .container {
+        width: 100%;
+        display: flex;
+        flex-flow: wrap;
+        justify-content: space-around;
+
+    }
+
+    #timetable h2 {
+        width: 100%;
+        font-size: 25px;
+
+    }
+
+    .left {
+        width: 350px;
+        height: 350px;
+        margin-left: 2%;
+    }
+
+    .right {
+        margin-right: 2%;
+        width: 350px;
+        height: 350px;
+    }
+
+    #timetable img {
+        width: 100%;
+        height: 100%;
+    }
+
+
+    /* 아티스트 */
+    #artist {
+        height: auto;
+    }
+
+    #artist h2 {
+        width: 100%;
+        font-size: 25px;
+        padding: 0 2%;
+    }
+
+    #artist .artistList1 {
+        height: 150px;
+        background-size: cover;
+        margin: 3% 0;
+    }
+
+    #artist .artistList2 {
+        height: 35px;
+        background-size: contain;
+    }
+
+    #artist .artistList3 {
+        height: 150px;
+        background-size: cover;
+        margin: 3% 0;
+    }
+
+    /* 콘텐츠 */
+
+    #content {
+        height: auto;
+        padding: 100px 2%;
+    }
+
+    #content .container {
+        width: 100%;
+    }
+
+    #content h2 {
+        width: 100%;
+        font-size: 25px;
+    }
+
+    #content .contentBox {
+        margin: 6%;
+        width: 250px;
+        height: 250px;
+    }
+
+    #content .contentBox p {
+        font-size: 1.2rem;
+    }
+}
+
+
+/* 최소사이즈 */
+
+@media (max-width:499px){
+/* 홈 */
+
+#home .container img {
+    width: 100%;
+}
+
+
+/* 뉴스 */
+
+
+#news {
+    padding: 100px 2%;
+}
+
+#news h2 {
+    font-size: 20px;
+}
+
+
+/* 어바웃 */
+
+#about h2 {
+    font-size: 20px;
+}
+
+.lpBox {
+    width: 200px;
+    height: 200px;
+}
+
+#about .aboutText p:nth-child(1) {
+    font-size: 16px;
+}
+
+#about .aboutText p:nth-child(2) {
+    font-size: 16px;
+}
+
+#about .aboutText p:nth-child(4) {
+    font-size: 15px;
+}
+
+#about .aboutText p:nth-child(5) {
+    font-size: 15px;
+}
+
+.aboutText2 dt {
+    font-size: 16px;
+}
+
+.aboutText2 dd {
+    font-size: 12px;
+}
+
+
+
+/* 타임테이블 */
+
+
+#timetable .container{
+    width: 100%;
+}
+
+#timetable h2 {
+    font-size: 20px;
+}
+
+.left {
+    width: 300px;
+    height: 300px;
+    margin: 50px auto;
+}
+
+.right {
+    margin:50px auto;
+    width: 300px;
+    height: 300px;
+}
+
+
+/* 아티스트 */
+
+#artist h2 {
+    font-size: 20px;
+}
+#artist .artistImg{
+    margin: 5% 0;
+}
+
+/* 콘텐츠 */
+
+#content h2 {
+    font-size: 20px;
+}
+}
