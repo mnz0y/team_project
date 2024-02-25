@@ -1,1 +1,172 @@
 @charset "UTF-8";
+
+/* 슬라이드 이미지 */
+#slideWrap{
+    width: 1920px;
+    height: 400px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+#slideWrap .slide{
+    width: 400%;
+    height: 100%;
+}
+.slide li{
+    width: 1920px;
+    float: left;
+}
+.slide li img{
+    width: 100%;
+    height: 400px;
+}
+
+#slideWrap span{
+    position: absolute;
+    display: block;
+    top: 40%;
+    transform: translateY(-40%);
+    opacity: 0.5;
+    cursor: pointer;
+    display: none;
+}
+#slideWrap span:hover{
+    opacity: 1;
+}
+
+#slideWrap .prev{
+    left: 100px;
+    width: 40px;
+    height: 40px;
+    border-top: 1rem solid var(--darkred);
+    border-right: 1rem solid var(--darkred);
+    transform: rotate(225deg);
+}
+
+#slideWrap .next{
+    right: 100px;
+    width: 40px;
+    height: 40px;
+    border-top: 1rem solid var(--darkred);
+    border-right: 1rem solid var(--darkred);
+    transform: rotate(45deg);
+}
+/* 배달버튼 */
+#slideBtn{
+    width: 100%;
+    height: 180px;
+    position: relative;
+}
+#slideBtn .container{
+    background-color: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#slideBtn .container div{
+    width: 40%;
+}
+
+#slideBtn .container div a{
+    display: flex;
+    justify-content: center;
+}
+#slideBtn .container div a img{
+    width: 100px;
+    height: 60px;
+}
+
+/* 메뉴 */
+#menu{
+    width: 100%;
+    height: 700px;
+}
+
+#menu .container{
+    background-color: blue;
+}
+.menuWrap ul{
+    width: 250%;
+}
+
+.menuWrap ul li{
+    float: left;
+}
+/* 슬라이드 텍스트 */
+.slideText{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+.track{
+    display: flex;
+    position: relative;
+    width: 300%;
+    padding-top: 1%;
+    animation: slideText 15s linear infinite;
+}
+.track img{
+    width: 150px;
+    height: 150px;
+    margin: 0 10px;
+    animation: rotatePiz 6s linear infinite;
+    transform-origin:50% 50%;
+}
+.track p{
+    font-size: var(--slide-title);
+    margin: 0 10px;
+    font-weight: var(--weight-bb);
+}
+.track p:nth-child(4), p:nth-child(5){
+    color: var(--white);
+    text-shadow: 0 0 10px var(--darkred);
+}
+
+@keyframes rotatePiz{
+    100%{transform : rotate(360deg);}
+}
+
+@keyframes slideText{
+    0%{left:0}
+    100%{ left:-50vw}
+}
+
+
+/* 이벤트 */
+#event{
+    width: 100%;
+    height: 600px;
+}
+#event .container{
+    background-color: cadetblue;
+}
+
+
+/* CF광고 */
+
+#CF{
+    width: 100%;
+    height: 600px;
+    background-color: #333;
+}
+
+/* 비지니스 */
+#business{
+    width: 100%;
+    height: 500px;
+}
+#business .container{
+    background-color: cornflowerblue;
+}
+
+#store{
+    width: 100%;
+    height: 350px;
+    background:url(../img/bgggg.jpg) center/cover;
+}
