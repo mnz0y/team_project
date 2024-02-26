@@ -15,7 +15,11 @@
 <body>
     <div id="wrap">
         <header>
-            <div class="icon"></div>
+            <div class="icon"><a href="#">
+              <img src="img/logo.png" alt="logo">  
+            </a>
+                
+            </div>
             <nav class="nav">
                 <ul>
                     <li>
@@ -92,17 +96,23 @@
                 <div class="del">
                     <a href="#">
                         <img src="img/deli1.png" alt="delivery">
-                        <p>배달주문 <br>
+                        <p class="delText"><strong>배달주문</strong>
                             <span>자사앱 첫 주문 할인</span>
                         </p>
+                        <div class="arrow">
+                            <img src="img/arrow_line_right.png" alt="arrow">
+                        </div>
                     </a>
                 </div>
                 <div class="pack">
                     <a href="#">
                         <img src="img/deli2.png" alt="to_go">
-                        <p>포장주문 <br>
+                        <p class="delText"><strong>포장주문</strong>
                             <span>기다림 없이 픽업</span>
                         </p>
+                        <div class="arrow">
+                            <img src="img/arrow_line_right.png" alt="arrow">
+                        </div>
                     </a>
                 </div>
             </div>
@@ -138,7 +148,22 @@
         </div>
 
         <div id="event">
-            <div class="container"></div>
+            <div class="pizzaFix">
+                <img src="img/pizzabg.png" alt="pizza">
+                <img src="img/pizzaslidebg.png" alt="pizza">
+            </div>
+            <div class="container">
+                <h2>이벤트</h2>
+                <div class="eventWrap"></div>
+                <div class="eventScroll">
+                    <figure><img src="img/event1.png" alt="event_vanner"></figure>
+                    <figure><img src="img/event2.png" alt="event_vanner"></figure>
+                    <figure><img src="img/event3.png" alt="event_vanner"></figure>
+                    <figure><img src="img/event4.png" alt="event_vanner"></figure>
+                    <figure><img src="img/event5.gif" alt="event_vanner"></figure>
+                    <figure><img src="img/event6.gif" alt="event_vanner"></figure>
+                </div>
+            </div>
         </div>
 
         <div id="CF"></div>
@@ -168,7 +193,7 @@
                         첫 주문시, 20% 할인해드립니다.</h3>
                     <input type="text" placeholder="우편번호">
                     <input type="email" name="email" id="email" placeholder="이메일 주소">
-                    <button>로그인</button>
+                    <div class="button"><a href="#"><span>로그인</span></a></div>
                     <div class="sns">
                         <a href="https://www.youtube.com/channel/UCIRnjEoqAnSdvoTdz23z5sw" target="_blank"><img
                                 src="img/youtube.png" alt="youtube"></a>

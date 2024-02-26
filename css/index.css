@@ -36,7 +36,7 @@
 }
 
 #slideWrap .prev{
-    left: 100px;
+    left: 300px;
     width: 40px;
     height: 40px;
     border-top: 1rem solid var(--darkred);
@@ -45,7 +45,7 @@
 }
 
 #slideWrap .next{
-    right: 100px;
+    right: 300px;
     width: 40px;
     height: 40px;
     border-top: 1rem solid var(--darkred);
@@ -59,7 +59,7 @@
     position: relative;
 }
 #slideBtn .container{
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: var(--lightgreen);
     position: absolute;
     top: -20px;
     left: 50%;
@@ -69,17 +69,57 @@
     align-items: center;
     justify-content: space-evenly;
 }
-#slideBtn .container div{
-    width: 40%;
+#slideBtn .container>div{
+    width: 48%;
+    height: 80%;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.del{
+    border-radius:40px 0 0 40px ;
+}
+.pack{
+    border-radius:0 40px 40px 0 ;
 }
 
 #slideBtn .container div a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
-#slideBtn .container div a img{
+#slideBtn .container>div>a>img{
     width: 100px;
     height: 60px;
+    margin-right: 4%;
+}
+.delText{
+    display: flex;
+    flex-wrap: wrap;
+    width: 25%;
+}
+.delText strong{
+    width: 100%;
+    font-size: var(--size-m);
+}
+.arrow{
+    width: 60px;
+    height: 60px;
+    background-color: var(--lightred);
+    border-radius: 50%;
+    text-align: center;
+    transition: all .5s;
+}
+.arrow:hover{
+    background-color: var(--darkred);
+   
+}
+.arrow img{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-top: 15px;
 }
 
 /* 메뉴 */
@@ -88,8 +128,10 @@
     height: 700px;
 }
 
-#menu .container{
-    background-color: blue;
+#menu h2{
+    text-align: center;
+    font-size: var(--size-l);
+
 }
 .menuWrap ul{
     width: 250%;
@@ -107,9 +149,12 @@
 .track{
     display: flex;
     position: relative;
-    width: 300%;
+    width: 4040px;
     padding-top: 1%;
-    animation: slideText 15s linear infinite;
+    animation: slideText 20s linear infinite;
+}
+.slideText:nth-last-child(3) .track{
+    animation: slideText 20s reverse linear infinite;
 }
 .track img{
     width: 150px;
@@ -133,21 +178,50 @@
 }
 
 @keyframes slideText{
-    0%{left:0}
-    100%{ left:-50vw}
+    0%{left:0px}
+    100%{ left:-2030px}
 }
+
 
 
 /* 이벤트 */
 #event{
     width: 100%;
     height: 600px;
+    position: relative;
+    overflow: hidden;
 }
-#event .container{
-    background-color: cadetblue;
+#event h2{
+    text-align: center;
+    font-size: var(--size-l);
+}
+.eventScroll{
+    display: flex;
+}
+.pizzaFix{
+    position: absolute;
+    left: -100px;
+    bottom: -150px;
+    z-index: -5;
+    opacity: 0.9;
+}
+.pizzaFix img:nth-of-type(1){
+    transform: rotate(120deg);
+}
+.pizzaFix img:nth-of-type(2){
+    position: absolute;
+    animation: pizzaSlide 4s linear infinite;
 }
 
+@keyframes pizzaSlide {
+    0%{ transform: rotate(9deg) translate(-75px, 0px);}
 
+    50%{ 
+        transform: rotate(9deg) translate(-150px ,40px);
+    }
+    100%{transform: rotate(9deg) translate(-75px, 0px)}
+    
+}
 /* CF광고 */
 
 #CF{
