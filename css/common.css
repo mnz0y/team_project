@@ -23,7 +23,7 @@ header::after{
     position: absolute; 
     z-index: 1;
     transition: all 1.3s;
-    opacity: 0.8;
+    opacity: 0.7;
 }
 header.on::after{
     height: 220px;
@@ -37,7 +37,7 @@ header .icon img{
     height: 40px;
 }
 .nav{
-    width: 60%;
+    width: 40%;
     height: 100%;
     z-index: 1000;
 }
@@ -113,47 +113,26 @@ footer .container{
     border: 1px solid var(--beige);
     outline: none;
 }
-#discount .button{
+#discount button{
     width: 30%;
     height: 40px;
-    position: relative;
-}
-#discount .button a{
-    display: block;
-    width: 100%;
-    height: 40px;
-    border: 1px solid var(--darkgreen);
+    border: 4px solid var(--darkgreen);
     border-radius: 20px;
     background-color: var(--darkgreen);
     color: var(--beige);
     font-size: var(--size-s);
     margin-top: 1%;
-    text-align: center;
-    padding: 1%;
+    outline: none;
+    box-shadow: inset 0 0 0 0 var(--beige);
+    transition: ease-out 0.5s;
+    cursor: pointer;
 }
-#discount .button a:hover{
+#discount button:hover{
+    box-shadow: inset 195px 0 0 0 var(--beige);
     color: var(--darkgreen);
 }
 
-#discount .button a span{
-    z-index: 2;
-    position: relative;
-}
-#discount .button a:hover:after{
-    width: 100%;
-}
-#discount .button a::after{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background-color: var(--beige);
-    transition: all .35s;
-    border-radius: 20px;
-    border: 2px solid var(--darkgreen);
-}
+
 
 #discount .sns{
     width: 40%;

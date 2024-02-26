@@ -2,7 +2,7 @@
 
 $(function(){
     $('.nav>ul>li').mouseover(function(){
-        $('.nav>ul>li>ul').stop().slideDown(900);
+        $('.nav>ul>li>ul').stop().slideDown(700);
         $('header').addClass('on')});
 
     $('.nav>ul>li').mouseout(function(){
@@ -39,3 +39,19 @@ $(function(){
         next();
     });
 });
+
+//메뉴
+
+        $(function(){
+            $('.menuSlide').slick({
+                infinite: true,
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                speed: 500,
+                autoplay:true,
+                autoplaySpeend:5000,
+                centerMode:true,
+                centerPadding : '0',
+                spaceBetween:0,
+              });
+            });

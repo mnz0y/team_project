@@ -2,8 +2,8 @@
 
 /* 슬라이드 이미지 */
 #slideWrap{
-    width: 1920px;
-    height: 400px;
+    width: 1900px;
+    height: 500px;
     margin: 0 auto;
     position: relative;
     overflow: hidden;
@@ -14,12 +14,12 @@
     height: 100%;
 }
 .slide li{
-    width: 1920px;
+    width: 1900px;
     float: left;
 }
 .slide li img{
     width: 100%;
-    height: 400px;
+    height: 500px;
 }
 
 #slideWrap span{
@@ -126,20 +126,20 @@
 #menu{
     width: 100%;
     height: 700px;
+    margin: 100px 0;
 }
-
 #menu h2{
-    text-align: center;
     font-size: var(--size-l);
+    text-align: center;
+}
+.menuSlide{
+    width: 100%;
+    height: 600px;
+    margin: 5% auto;
+}
 
-}
-.menuWrap ul{
-    width: 250%;
-}
+ 
 
-.menuWrap ul li{
-    float: left;
-}
 /* 슬라이드 텍스트 */
 .slideText{
     width: 100%;
