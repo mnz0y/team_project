@@ -123,8 +123,8 @@ footer .container{
     font-size: var(--size-s);
     margin-top: 1%;
     outline: none;
-    box-shadow: inset 0 0 0 0 var(--beige);
-    transition: ease-out 0.5s;
+    box-shadow: inset 0 0 0 var(--beige);
+    transition: linear 0.5s;
     cursor: pointer;
 }
 #discount button:hover{

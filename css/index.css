@@ -125,8 +125,9 @@
 /* 메뉴 */
 #menu{
     width: 100%;
-    height: 700px;
-    margin: 100px 0;
+    height: 600px;
+    margin: 50px 0;
+    overflow: hidden;
 }
 #menu h2{
     font-size: var(--size-l);
@@ -134,11 +135,87 @@
 }
 .menuSlide{
     width: 100%;
-    height: 600px;
-    margin: 5% auto;
+    height: 400px;
+    margin: 0 auto;
+}
+.pizzaF{
+    position: relative;
+    width: 350px;
+    height: 350px;
+    text-align: center;
+    transform: scale(0.75);
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+    }
+.pizzaF a{
+    display: inline-block;
+    width: 350px;
+    height: 350px;
+}
+.pizzaF a img{
+    max-width: 100%;
+    transition: all 0.4s ease-in-out;
 }
 
- 
+.slick-center{
+    transform: scale(1.1);
+}
+
+.slick-track{
+    height: 300px;
+    margin: 5% auto ;
+}
+.slick-prev{
+    z-index: 5;
+}
+.slick-prev:before{
+    font-size: var(--size-l);
+    color: var(--darkred);
+    position: absolute;
+    top: 45px;
+    left: 30px;
+}
+.slick-next:before{
+    font-size: var(--size-l);
+    color: var(--darkred);
+    position: absolute;
+    top: 45px;
+    right: 30px;
+}
+.pizzaB{
+    width: 100%;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    transition: all 0.5s;
+}
+.pizzaB strong{
+    font-size: var(--size-m);
+    color: var(--darkred);
+}
+.pizzaB p{
+    line-height: var(--size-m);
+}
+.pizzaB .price{
+    display: flex;
+    justify-content: center;
+}
+.m ,.l{margin: 1%;}
+.price small{
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+}
+.m small{
+    background-color: var(--lightred);
+}
+.l small{
+    background-color: var(--lightgreen);
+}
+
 
 /* 슬라이드 텍스트 */
 .slideText{
@@ -150,17 +227,17 @@
     display: flex;
     position: relative;
     width: 4040px;
-    padding-top: 1%;
     animation: slideText 20s linear infinite;
 }
 .slideText:nth-last-child(3) .track{
     animation: slideText 20s reverse linear infinite;
+    padding-top: 1%;
 }
 .track img{
     width: 150px;
     height: 150px;
     margin: 0 10px;
-    animation: rotatePiz 6s linear infinite;
+    animation: rotatePiz 25s linear infinite;
     transform-origin:50% 50%;
 }
 .track p{
@@ -182,20 +259,14 @@
     100%{ left:-2030px}
 }
 
-
-
-/* 이벤트 */
-#event{
+/* 비지니스 */
+#business{
     width: 100%;
-    height: 600px;
+    height: 500px;
     position: relative;
     overflow: hidden;
 }
-#event h2{
-    text-align: center;
-    font-size: var(--size-l);
-}
-.eventScroll{
+#business .container{
     display: flex;
 }
 .pizzaFix{
@@ -222,6 +293,7 @@
     100%{transform: rotate(9deg) translate(-75px, 0px)}
     
 }
+
 /* CF광고 */
 
 #CF{
@@ -229,15 +301,24 @@
     height: 600px;
     background-color: #333;
 }
-
-/* 비지니스 */
-#business{
+/* 이벤트 */
+#event{
     width: 100%;
-    height: 500px;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
 }
-#business .container{
-    background-color: cornflowerblue;
+#event h2{
+    text-align: center;
+    font-size: var(--size-l);
 }
+.eventScroll{
+    display: flex;
+}
+
+
+
+
 
 #store{
     width: 100%;

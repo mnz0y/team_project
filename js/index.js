@@ -14,11 +14,11 @@ $(function(){
 // 슬라이드 이미지
     function prev(){
         $('.slide li:last').prependTo('.slide');
-        $('.slide').css('margin-left',-1920);
+        $('.slide').css('margin-left',-1900);
         $('.slide').stop().animate({marginLeft:0},800);
     }
     function next(){
-        $('.slide').stop().animate({marginLeft:-1920},800,function(){
+        $('.slide').stop().animate({marginLeft:-1900},800,function(){
             $('.slide li:first').appendTo('.slide');
             $('.slide').css({marginLeft:0});
         });
@@ -49,9 +49,18 @@ $(function(){
                 slidesToScroll: 1,
                 speed: 500,
                 autoplay:true,
-                autoplaySpeend:5000,
+                autoplaySpeend: 500,
                 centerMode:true,
                 centerPadding : '0',
                 spaceBetween:0,
+              });
+
+              $('.pizzaF').mouseover(function(){
+                $(this).find('img').css('opacity','0.1');
+                $(this).children('.pizzaB').css('opacity','1');
+              });
+              $('.pizzaF').mouseout(function(){
+                $(this).find('img').css('opacity','1');
+                $(this).children('.pizzaB').css('opacity','0');
               });
             });
