@@ -368,7 +368,7 @@
 
 #CF{
     width: 100%;
-    height: 1500px;
+    height: auto;
     position: relative;
 }
 
@@ -378,9 +378,11 @@
 }
 #CF img{
     width: 100%;
+   
 }
 #CF video{
     width: 100%;
+    height: 100%;
 }
 .cfPopUp{
     width: 100%;
@@ -388,38 +390,162 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 5;
-    background-color: aliceblue;
+    z-index: 1000;
+    background-color: #666;
+    display: none;
 }
 .popVideo{
     width: 60vw;
-    background-color: aqua;
     position: fixed;
     top:50%;
     left:50%;
     transform: translate(-50%,-50%);
+    text-align: center;
 }
 .popVideo video{
-    width: 60vw;
-    object-fit: contain;
-    overflow: clip;
-
+   width: 90%;
+   margin: 3%;
+}
+.popVideo .cfBtn{
+    display: block;
+   margin: 0 auto;
+   width: 150px;
+   border-radius: 50px;
+   padding: 5px 10px;
+    font-family: var(--eng);
+    font-size: var(--size-s);
+    background-color: var(--darkred);
+    outline: none;
+    border: 2px solid var(--beige);
+    color: var(--beige);
+    transition: all 0.5s;
+}
+.popVideo .cfBtn:hover{
+    background-color: var(--beige);
+    border: 2px solid var(--darkred);
+    color: var(--darkred);
 }
 .cfDown{
-    bottom: 0;
+    bottom: -5px;
+  
+}
+#CF .cursor{
+    position: absolute;
+   display: inline-block;
+    width: 100px;
+    height: 100px;
+    z-index: 1000;
+}
+#CF .cursor img{
+    width: 100%;
+    height: 100%;
 }
 
 /* 이벤트 */
 #event{
     width: 100%;
-    height: 800px;
-background-color: aqua;
+    height: 900px;
+    position: relative;
+}
+#event h2{
+    text-align: center;
+    font-size: var(--size-l);
+    font-family: var(--eng);
+}
+.eventwrap{
+    width: 1300px;
+    height: 90%;
+    position: absolute;
+    right: 0;
+    overflow: hidden;
+}
+.eventSlide{
+    width: 350%;
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 
+.eventBox{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 81%;   
+}
+.eventBox img{
+    width: 60%;
+    margin-right: 5%;
+}
+.eventText span{
+    border: 2px solid var(--darkred);
+    padding: 0 3%;
+    font-family: var(--eng);
+    color: var(--darkred);
+}
+.eventText h3{
+    font-size: var(--size-m);
+    margin: 5% 0;
+}
+.eventText p{
+    margin: 5% 0;
+}
+.eventText button{
+   margin: 5% 0;
+    width: 200px;
+    padding: 3%;
+    border-radius: 50px;
+    position: relative;
+    outline: none;
+    border: 3px solid var(--darkred);
+    color: var(--darkred);
+    background-color: transparent;
+    font-weight: var(--weight-b);
+    transition: all 0.3s;
+    z-index: 5;
+    overflow: hidden;
+}
+.eventText button::before{
+    content: "";
+    position: absolute;
+    background-color: var(--darkred);
+    z-index: -5;
+    border-radius: 50px;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -100%;
+    transition: all 0.6s;
+}
 
+.eventText button:hover{
+    color: var(--beige);
+}
+.eventText button:hover::before{
+    transform: translateX(100%);
+}
 
+.eventwrap .left{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    bottom: 140px;
+    border-top: 1rem solid var(--darkred);
+    border-right: 1rem solid var(--darkred);
+    transform: rotate(225deg);
+    left: 5px;
+}
+.eventwrap .rig{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-top: 1rem solid var(--darkred);
+    border-right: 1rem solid var(--darkred);
+    transform: rotate(45deg);
+    bottom: 140px;
+    left: 80px;
+}
 
-
+/* 스토어 */
 #store{
     width: 100%;
     height: 350px;

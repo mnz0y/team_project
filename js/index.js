@@ -66,27 +66,47 @@ $(function () {
         $(this).children('.pizzaB').css('opacity', '0');
     });
 
-    //이벤트
-    $('.eventSlider').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-        fade: true,
-        autoplay: true,
-        autoplaySpeend: 500,
-        asNavFor: '.sliderNav'
-      });
-      $('.sliderNav').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        asNavFor: '.eventSlider',
-        dots: true,
-        arrows:false,
-        centerMode: false,
-        focusOnSelect: true,
-      });
 
+    //비디오
 
+    $("#CF").mousemove(function (e) {
+        $('.cursor').css("top", e.screenY - 100 + 'px');
+        $('.cursor').css("left", e.screenX - 100 + 'px');
+        $('.cursor').fadeIn();
+    });
+    $("#CF").on("mouseleave", function () {
+        $('.cursor').fadeOut();
+    });
+
+    //팝업
+    $('#mainVideo').click(function () {
+        $('.cfPopUp').fadeIn();
+    });
+    $('.cfBtn').click(function () {
+        $('.cfPopUp').fadeOut();
+    });
+    
 });
 
-
+//이벤트
+    function left() {
+        $('.eventSlide li:last').prependTo('.eventSlide');
+        $('.eventSlide').css('margin-left', -1000);
+        $('.eventSlide').stop().animate({ marginLeft: 0 }, 800);
+    }
+    function rig() {
+        $('.eventSlide').stop().animate({ marginLeft: -1000 }, 800, function () {
+            $('.eventSlide li:first').appendTo('.eventSlide');
+            $('.eventSlide').css({ marginLeft: 0 });
+        });
+    }
+    setInterval(rig, 8000);
+    $(function () {
+       
+        $('.left').click(function () {
+            left();
+        });
+        $('.rig').click(function () {
+            rig();
+        });
+    });
