@@ -85,7 +85,7 @@ header .icon img{
 /* 풋터 */
 footer{
     width: 100%;
-    height: 400px;
+    height: 500px;
     background-color: var(--darkred);
  
 }
@@ -109,7 +109,7 @@ footer .container{
     margin: 1% 0;
     border-radius: 20px;
     padding-left: 3%;
-    height: 40px;
+    height: 50px;
     border: 1px solid var(--beige);
     background-color: var(--beige);
     outline: none;
@@ -155,9 +155,6 @@ footer .container{
     transform: translateX(100%);
 }
 
-
-
-
 #discount .sns{
     width: 40%;
     margin-left: 70px;
@@ -182,10 +179,11 @@ footer .container{
 #footerNav dl{
     width: 40%;
 }
+
 #footerNav dt, #footerNav dd{
     font-size: var(--size-s);
     color: var(--beige);
-    margin: 2%;
+    margin: 10%;
 }
 #footerNav dl a{
     display: block;
@@ -204,4 +202,9 @@ footer .container{
     width: 100%;
     color: var(--beige);
     font-size: var(--size-s);
+    position: relative;
+}
+#copyrights span{
+    position: absolute;
+    bottom: 20px;
 }

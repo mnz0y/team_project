@@ -91,11 +91,11 @@ $(function () {
 //이벤트
     function left() {
         $('.eventSlide li:last').prependTo('.eventSlide');
-        $('.eventSlide').css('margin-left', -1000);
+        $('.eventSlide').css('margin-left', -850);
         $('.eventSlide').stop().animate({ marginLeft: 0 }, 800);
     }
     function rig() {
-        $('.eventSlide').stop().animate({ marginLeft: -1000 }, 800, function () {
+        $('.eventSlide').stop().animate({ marginLeft: -850 }, 800, function () {
             $('.eventSlide li:first').appendTo('.eventSlide');
             $('.eventSlide').css({ marginLeft: 0 });
         });
@@ -108,5 +108,37 @@ $(function () {
         });
         $('.rig').click(function () {
             rig();
+        });
+    });
+
+    // 스크롤이벤트
+    $(function(){
+        $(window).scroll(function(){
+            let ws =$(this).scrollTop();
+            console.log(ws)
+            let business = $('.busText').offset().top;
+            if(ws<2200){
+                $('.busText').css('transform','translateX(-500px)').css('opacity','0');
+                $('.busImg').css('transform','translateX(500px)').css('opacity','0');
+            }
+            if(0<ws<business-700){
+                $('.busText').css('transform','translateX(0px)').css('opacity','1');
+                $('.busImg').css('transform','translateX(0px)').css('opacity','1');
+                $('.eventBox').css('transform','translateY(100px)').css('opacity','0');
+                $('.storeBack img').css('transform','scale(1.3)');
+                $('#store .container').css('transform','translateY(100px)').css('opacity','0');
+            }
+            if(business<ws){
+                $('.busText').css('transform','translateX(-500px)').css('opacity','0');
+                $('.busImg').css('transform','translateX(500px)').css('opacity','0');
+                $('.eventBox').css('transform','translateY(0px)').css('opacity','1');
+            }
+           
+            let store = $('#store').offset().top;
+            if(store-700<ws){
+                $('.eventBox').css('transform','translateY(100px)').css('opacity','0');
+                $('.storeBack img').css('transform','scale(1)');
+                $('#store .container').css('transform','translateY(0)').css('opacity','1');
+            }
         });
     });
