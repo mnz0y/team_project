@@ -10,7 +10,22 @@ $(function () {
         $('.nav>ul>li>ul').stop().slideUp(600);
         $('header').removeClass('on');
     });
+
+    $('.reMenu>li').click(function(){
+        $(this).children('.submenu').slideToggle('slow');
+    });
+
+
+// 햄버거 아이콘
+    $('.menu-trigger').click(function(){
+        $(this).toggleClass('is-active');
+        $('.menuWrap').toggleClass('moveMenu')
+    });
+
 });
+
+
+    
 
 // 슬라이드 이미지
 function prev() {
@@ -55,6 +70,26 @@ $(function () {
         centerMode: true,
         centerPadding: '0',
         spaceBetween: 0,
+        responsive : [
+            {   breakpoint:1700,
+                settings : {
+                    slidesToShow:3,
+                }
+            },
+            {   breakpoint :1015,
+                settings : {
+                    slidesToShow:2,
+                    centerMode:false
+
+                }
+            },
+            {   breakpoint :600,
+                settings : {
+                    slidesToShow:1,
+
+                }
+            }
+        ]
     });
 
     $('.pizzaF').mouseover(function () {

@@ -1,8 +1,94 @@
 @charset "UTF-8";
 
 
-/* 네비게이션 */
+/* 반응형 네비게이션 */
 
+.menuWrap{
+    position: absolute;
+    top: 100px;
+    right:  0;
+    width: 0%;
+    height: 100vh;
+    z-index: 9000;
+    background-color: var(--darkred);
+    transition: all 1.5s;
+}
+
+.moveMenu{
+    width: 100%;
+}
+.moveMenu .reMenu>li>a{
+    font-size: var(--size-m);
+}
+.reMenu{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 200px;
+}
+.reMenu .submenu{
+    display: none;
+}
+.reMenu li a{
+    color: var(--beige);
+    display: inline-block;
+    margin: 5%;
+    width: 100px;
+}
+.reMenu>li>a{
+    font-size: 0;
+    margin: 3%;
+}
+.menu-trigger{
+    width: 40px;
+    height: 40px;
+    position: relative;
+    display: none;
+}
+.menu-trigger span{
+    display: inline-block;
+    width:40px;
+    height: 4px;
+    position: absolute;
+    right: 0;
+    background-color: var(--beige);
+    border-radius: 4px;
+    margin-right: 20px;
+    -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.menu-trigger span:nth-of-type(1){
+    top: 0;
+}
+.menu-trigger span:nth-of-type(2){
+    top: 15px;
+}
+.menu-trigger span:nth-of-type(3){
+   top: 30px;
+}
+.menu-trigger.is-active .line:nth-child(2){
+    opacity: 0;
+  }
+  
+  .menu-trigger.is-active .line:nth-child(1){
+    -webkit-transform: translateY(15px) rotate(45deg);
+    -ms-transform: translateY(15px) rotate(45deg);
+    -o-transform: translateY(15px) rotate(45deg);
+    transform: translateY(15px) rotate(45deg);
+  }
+  
+  .menu-trigger.is-active .line:nth-child(3){
+    -webkit-transform: translateY(-15px) rotate(-45deg);
+    -ms-transform: translateY(-15px) rotate(-45deg);
+    -o-transform: translateY(-15px) rotate(-45deg);
+    transform: translateY(-15px) rotate(-45deg);
+  }
+
+
+/* 네비게이션 */
 header{
     width: 100%;
     height: 100px;
@@ -81,6 +167,8 @@ header .icon img{
 .nav ul li a:hover{
     font-weight: var(--weight-b);
 }
+
+
 
 /* 풋터 */
 footer{
