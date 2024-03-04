@@ -76,7 +76,7 @@ $(function () {
                     slidesToShow:3,
                 }
             },
-            {   breakpoint :1015,
+            {   breakpoint :1016,
                 settings : {
                     slidesToShow:2,
                     centerMode:false
