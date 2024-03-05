@@ -1,0 +1,649 @@
+@charset "UTF-8";
+
+/* 데스크탑 */
+@media (min-width:1016px) and (max-width:1700px) {
+
+    /* 슬라이드 이미지 */
+    #slideWrap {
+        width: 100%;
+        height: 400px;
+        margin: 0 auto;
+        position: relative;
+        overflow: hidden;
+    }
+
+    #slideWrap .slide {
+        width: 400%;
+        height: 100%;
+    }
+
+    .slide li {
+        width: 25%;
+        float: left;
+        margin: 0 auto;
+    }
+
+    .slide li img {
+        width: 100%;
+        height: 400px;
+    }
+
+    #slideWrap .prev {
+        left: 5%;
+    }
+
+    #slideWrap .next {
+        right: 5%;
+    }
+
+    /* 배달버튼 */
+    #slideBtn {
+        width: 100%;
+        height: 150px;
+        position: relative;
+    }
+
+    #slideBtn .container {
+        width: 90%;
+    }
+
+    #slideBtn .container div a {
+        justify-content: space-evenly;
+    }
+
+    #slideBtn .container>div>a>img {
+        width: 80px;
+        height: 50px;
+        margin-right: 3%;
+    }
+
+    .delText {
+        width: 30%;
+    }
+
+    /* 메뉴 */
+
+    .menuSlide {
+        height: 450px;
+    }
+
+    .slick-list {
+        height: 450px;
+    }
+
+    #menu .slick-prev {
+        top: 38%;
+    }
+
+    #menu .slick-next {
+        top: 38%;
+    }
+
+    /* CF광고 */
+    .popVideo {
+        width: 70vw;
+    }
+
+
+    /* 비지니스 */
+
+    #business .container {
+        width: 100%;
+        padding: 5%;
+    }
+
+    .busText {
+        width: 50%;
+        height: 400px;
+    }
+
+    .busImg {
+        width: 50%;
+    }
+
+    .busImg img {
+        height: 350px;
+    }
+
+    .busText span {
+        margin: 0;
+    }
+
+    .busText button {
+        width: 50%;
+        padding: 1%;
+    }
+
+    /* 이벤트 */
+
+    #event {
+        width: 100%;
+        height: 900px;
+        position: relative;
+        background-color: var(--lightgreen);
+        overflow: hidden;
+    }
+
+    #event h2 {
+        text-align: center;
+        font-size: var(--size-l);
+        font-family: var(--eng);
+        padding-top: 2%;
+    }
+
+    .eventwrap {
+        width: 100%;
+        right: 0;
+    }
+
+    .eventBox {
+        padding: 4%;
+    }
+
+    .eventBox img {
+        width: 350px;
+        height: 350px;
+    }
+
+    .eventwrap .left {
+        left: 50px;
+        bottom: 150px;
+    }
+
+    .eventwrap .rig {
+        left: 100px;
+        bottom: 150px;
+    }
+
+    /* 스토어 */
+
+    #store .container {
+        width: 100%;
+    }
+
+}
+
+/* 테블릿 */
+@media (min-width:700px) and (max-width:1015px) {
+    html {
+        font-size: 4.5px;
+        word-break: keep-all;
+    }
+
+    /* 슬라이드 이미지 */
+    #slideWrap {
+        width: 100%;
+        height: 350px;
+    }
+
+    .slide li {
+        width: 25%;
+    }
+
+    .slide li img {
+        width: 100%;
+        height: 350px;
+    }
+
+    #slideWrap .prev {
+        left: 100px;
+    }
+
+    #slideWrap .next {
+        right: 100px;
+    }
+
+    /* 배달버튼 */
+    #slideBtn {
+        width: 100%;
+        height: 150px;
+    }
+
+    #slideBtn .container {
+        width: 85%;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-evenly;
+    }
+
+    #slideBtn .container>div {
+        width: 45%;
+        height: 80%;
+        transition: all 0.5s;
+    }
+
+    #slideBtn .container div a {
+        text-align: center;
+    }
+
+    #slideBtn .container div:hover {
+        opacity: 0.5;
+    }
+
+    #slideBtn .container>div>a>img {
+        width: 80px;
+        height: 50px;
+    }
+
+    .delText {
+        width: 50%;
+    }
+
+    .delText strong {
+        width: 100%;
+    }
+
+    .delText span {
+        display: none;
+    }
+
+    .arrow {
+        display: none;
+    }
+
+
+    /* 메뉴 */
+
+    .pizzaF {
+        transform: scale(0.9);
+    }
+
+    #menu .slick-prev {
+        top: 38%;
+    }
+
+    #menu .slick-next {
+        top: 38%;
+    }
+
+    /* 비지니스 */
+
+    #business .container {
+        width: 90%;
+        padding: 2%;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: flex-start;
+        margin-top: 5%;
+    }
+
+    .busText {
+        width: 450px;
+        flex-wrap: wrap;
+        height: auto;
+        justify-content: flex-start;
+    }
+
+    .busImg {
+        position: absolute;
+        right: 10%;
+        width: 60%;
+        margin-top: 5%;
+    }
+
+    .busImg img {
+        height: 100%;
+    }
+
+    .busText span {
+        width: 100%;
+        margin: 1% 0;
+    }
+
+    .busText button {
+        width: 400px;
+        padding: 1%;
+        margin-top: 2%;
+    }
+
+    .pizzaFix {
+        left: -110px;
+        bottom: -180px;
+        opacity: 0.8;
+    }
+
+    /* 이벤트 */
+    #event {
+        height: 550px;
+    }
+
+    .eventwrap {
+        width: 100%;
+        padding: 0;
+        right: 0;
+    }
+
+    .eventSlide {
+        height: 100%;
+        margin-top: -5%;
+    }
+
+    .eventSlide li {
+        width: 650px;
+        margin: 0 auto;
+    }
+
+    .eventBox {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 650px;
+        transform: translateY(100px);
+        opacity: 0;
+        transition: all 4s;
+    }
+
+    .eventBox img {
+        width: 250px;
+        height: 250px;
+        margin-right: 2%;
+    }
+
+    .eventText {
+        width: 50%;
+    }
+
+    .eventText h3 {
+        font-size: var(--size-s);
+    }
+
+    .eventwrap .left {
+        bottom: 100px;
+        left: 45%;
+    }
+
+    .eventwrap .rig {
+        bottom: 100px;
+        left: 55%;
+    }
+
+
+    /* 스토어 */
+    #store {
+        height: 350px;
+    }
+
+    .storeBack {
+        height: 350px;
+    }
+
+    #store .container {
+        width: 100%;
+        text-align: center;
+        align-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        transform: translateY(200px);
+        opacity: 0;
+        transition: linear 1.5s;
+    }
+
+    #store h2 {
+        font-size: var(--size-l);
+    }
+
+    #store p {
+        font-size: var(--size-xs);
+    }
+
+    /* 슬라이드 텍스트 */
+    .slideText:nth-last-child(3) .track {
+        padding-top: 4%;
+    }
+
+}
+
+
+@media (max-width:699px) {
+
+    html {
+        font-size: 4px;
+        word-break: keep-all;
+    }
+
+    /* 슬라이드 이미지 */
+    #slideWrap {
+        width: 100%;
+        height: 300px;
+    }
+
+    .slide li {
+        width: 25%;
+    }
+
+    .slide li img {
+        width: 100%;
+        height: 300px;
+    }
+
+    #slideWrap .prev {
+        left: 10%;
+        width: 25px;
+        height: 25px;
+    }
+
+    #slideWrap .next {
+        right: 10%;
+        width: 25px;
+        height: 25px;
+    }
+
+    /* 배달버튼 */
+    #slideBtn {
+        height: 120px;
+    }
+
+    #slideBtn .container {
+        width: 90%;
+    }
+
+    #slideBtn .container>div {
+        width: 46%;
+        height: 83%;
+        text-align: center;
+    }
+
+    #slideBtn .container div:hover {
+        opacity: 0.5;
+    }
+
+    #slideBtn .container>div>a>img {
+        width: 65px;
+        height: 45px;
+    }
+
+    .delText {
+        width: 50%;
+    }
+
+    .delText span {
+        display: none;
+    }
+
+    .delText strong {
+        width: 100%;
+    }
+
+    .arrow {
+        display: none;
+    }
+
+    /* 메뉴 */
+    .menuSlide {
+        height: 450px;
+    }
+
+    .pizzaF {
+        width: 300px;
+        height: 300px;
+    }
+
+    .pizzaF a {
+        display: inline-block;
+        width: 300px;
+        height: 300px;
+    }
+
+    #menu .slick-prev:before {
+        left: 55px;
+    }
+
+    #menu .slick-next:before {
+        right: 55px;
+    }
+
+    #menu .slick-track {
+        height: 300px;
+        margin: 15% auto;
+    }
+
+    #menu .slick-prev {
+        top: 38%;
+    }
+
+    #menu .slick-next {
+        top: 38%;
+    }
+
+    /* CF 광고 */
+    #CF .cursor {
+        width: 50px;
+        height: 50px;
+    }
+
+    /* 비지니스 */
+    #business {
+        height: 800px;
+    }
+
+    #business .container {
+        width: 90%;
+        align-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .busText {
+        width: 80%;
+        height: 300px;
+        flex-wrap: wrap;
+    }
+
+    .busImg {
+        width: 80%;
+    }
+
+    .busImg img {
+        width: 90%;
+        height: 100%;
+    }
+
+    .busText span {
+        margin: 1% 0;
+    }
+
+    .busText button {
+        width: 50%;
+        margin-top: 3%;
+    }
+
+    .pizzaFix {
+        transform: scale(0.8);
+    }
+
+
+    /* 이벤트 */
+
+    .eventwrap {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 0;
+    }
+
+    .eventSlide li {
+        width: 100%;
+    }
+
+    .eventBox {
+        flex-wrap: wrap;
+        align-content: center;
+    }
+
+    .eventBox img {
+        width: 250px;
+        height: 250px;
+        margin-right: 0;
+    }
+
+    .eventText {
+        width: 70%;
+        padding: 5%;
+    }
+
+    .eventText h3 {
+        text-align: center;
+    }
+
+    .eventText p {
+        text-align: center;
+    }
+
+    .eventText button {
+        width: 100%;
+    }
+
+    .eventwrap .left {
+        left: 40%;
+    }
+
+    .eventwrap .rig {
+        left: 55%;
+    }
+
+
+    /* 스토어 */
+    #store {
+        height: 300px;
+    }
+
+    .storeBack {
+        height: 300px;
+    }
+
+    .storeBack img {
+        height: 100%;
+    }
+
+    #store .container {
+        width: 100%;
+    }
+
+    #store h2 {
+        font-size: var(--size-l);
+    }
+
+    #store p {
+        margin-bottom: 3%;
+        font-size: var(--size-s);
+    }
+
+    #store .searchTab {
+        width: 70%;
+    }
+
+    .searchTab img {
+        width: 40px;
+        height: 40px;
+    }
+
+    /* 슬라이드 텍스트 */
+    .slideText:nth-last-child(3) .track {
+        padding-top: 5%;
+    }
+
+    @media (max-width:500px){
+        
+    }
+
+}
