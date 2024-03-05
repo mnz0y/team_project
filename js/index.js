@@ -86,7 +86,12 @@ $(function () {
             {   breakpoint :700,
                 settings : {
                     slidesToShow:1,
-
+                }
+            },
+            {   breakpoint:500,
+                settings : {
+                    slidesToShow:1,
+                    centerMode:false
                 }
             }
         ]

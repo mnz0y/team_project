@@ -641,9 +641,83 @@
     .slideText:nth-last-child(3) .track {
         padding-top: 5%;
     }
+}
 
-    @media (max-width:500px){
-        
+/* 최소사이즈 */
+@media (max-width:500px) {
+    html {
+        font-size: 3.5px;
     }
 
+    /* 슬라이드 이미지 */
+    #slideWrap {
+        height: 200px;
+    }
+
+    .slide li img {
+        height: 200px;
+    }
+
+    /* 배달버튼 */
+    #slideBtn {
+        height: 100px;
+    }
+
+    #slideBtn .container>div>a>img {
+        width: 50px;
+        height: 35px;
+    }
+
+    .delText {
+        width: 55%;
+    }
+
+    /* 메뉴 */
+    #menu {
+        height: 400px;
+    }
+    .menuSlide {
+        height: auto;
+    }
+    /* 슬라이드 텍스트 */
+   .track p{
+        margin: 17px;
+    }
+    /* CF 광고 */
+    #CF .cursor {
+        width: 30px;
+        height: 30px;
+    }
+    /* 비지니스 */
+    #business {
+        height: 650px;
+    }
+    #business .container{
+        margin: 5%;
+    }
+    .busText button{
+        height: 40px;
+    }
+    .busText{
+        height: auto;
+    }
+    .busImg{
+        margin: 3% 0;
+    }
+    .busImg img{
+        border-radius: 30px;
+    }
+    .pizzaFix {
+        transform: scale(0.6);
+    }
+    /* 이벤트 */
+    #event{
+        height: 700px;
+    }
+    .eventwrap .left {
+        bottom: 90px;
+    }
+    .eventwrap .rig {
+       bottom: 90px;
+    }
 }
