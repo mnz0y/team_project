@@ -632,6 +632,7 @@ p:nth-child(5) {
 }
 
 .eventwrap .left {
+    display: none;
     position: absolute;
     width: 20px;
     height: 20px;
@@ -644,6 +645,7 @@ p:nth-child(5) {
 }
 
 .eventwrap .rig {
+    display: none;
     position: absolute;
     width: 20px;
     height: 20px;
