@@ -114,9 +114,9 @@
         margin: 0;
     }
 
-    .busText button {
-        width: 50%;
-        padding: 1%;
+    .busText a {
+       padding: 10px;
+       width: 80%;
     }
 
     /* 이벤트 */
@@ -304,9 +304,9 @@
         margin: 1% 0;
     }
 
-    .busText button {
+    .busText a {
         width: 400px;
-        padding: 1%;
+        padding: 10px;
         margin-top: 2%;
     }
 
@@ -555,9 +555,10 @@
         margin: 1% 0;
     }
 
-    .busText button {
+    .busText a {
         width: 50%;
         margin-top: 3%;
+        padding: 11px;
     }
 
     .pizzaFix {
@@ -711,8 +712,9 @@
     #business .container{
         margin: 5%;
     }
-    .busText button{
+    .busText a{
         height: 40px;
+        padding: 6px;
     }
     .busText{
         height: auto;
