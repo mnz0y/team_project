@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>7st Street Pizza_sub1</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/sub_1.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/common_media.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/02b18b2c57.js" crossorigin="anonymous"></script>
+  <script src="js/jquery.lettering.js"></script>
+  <script src="js/sub_1.js"></script>
+  <script src="js/common.js"></script>
+</head>
+
+<body>
+  
+  <header>
+    <div class="icon"><a href="index.html">
+            <img src="img/main/logo.png" alt="logo">
+        </a>
+    </div>
+    <nav class="nav">
+        <ul>
+            <li>
+                <a href="sub1.html">메뉴</a>
+                <ul class="submenu">
+                    <li><a href="sub1.html">인기메뉴</a></li>
+                    <li><a href="sub1.html">피자</a></li>
+                    <li><a href="sub1.html">SET BOX</a></li>
+                    <li><a href="sub1.html">사이드</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">E쿠폰</a>
+                <ul class="submenu">
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">회사소개</a>
+                <ul class="submenu">
+                    <li><a href="#">7번가 소개</a></li>
+                    <li><a href="#">7 Secrets</a></li>
+                    <li><a href="#">History</a></li>
+                    <li><a href="#">CF광고</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="sub2.html">가맹문의</a>
+                <ul class="submenu">
+                    <li><a href="sub2.html">창업상담</a></li>
+                    <li><a href="sub2.html">가맹점지원</a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">이벤트</a>
+                <ul class="submenu">
+                    <li><a href="#">온라인 이벤트</a></li>
+                    <li><a href="#">멤버쉽 혜택</a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <a class="menu-trigger" href="#">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+    </a>
+</header>
+<div class="menuWrap">
+    <ul class="reMenu">
+        <li>
+            <a href="sub1.html">메뉴</a>
+            <ul class="submenu">
+                <li><a href="sub1.html">인기메뉴</a></li>
+                <li><a href="sub1.html">피자</a></li>
+                <li><a href="sub1.html">SET BOX</a></li>
+                <li><a href="sub1.html">사이드</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">E쿠폰</a>
+        </li>
+        <li>
+            <a href="#">회사소개</a>
+            <ul class="submenu">
+                <li><a href="#">7번가 소개</a></li>
+                <li><a href="#">7 Secrets</a></li>
+                <li><a href="#">History</a></li>
+                <li><a href="#">CF광고</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="sub2.html">가맹문의</a>
+            <ul class="submenu">
+                <li><a href="sub2.html">창업상담</a></li>
+                <li><a href="sub2.html">가맹점지원</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">이벤트</a>
+            <ul class="submenu">
+                <li><a href="#">온라인 이벤트</a></li>
+                <li><a href="#">멤버쉽 혜택</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+  <div id="wrap">
+    
+    <!-- 피자 선택 -->
+    <div id="main">
+      <div class="size">
+        <p>SELECT SIZE</p>
+        <div class="sizeOpt">
+          <label>
+            <input type="radio" name="size" id="sS" value="28000">
+            <p>S</p>
+          </label>
+          <label>
+            <input type="radio" name="size" id="sM" value="32000" checked>
+            <p>M</p>
+          </label>
+          <label>
+            <input type="radio" name="size" id="sL" value="37000">
+            <p>L</p>
+          </label>
+          <label>
+            <input type="radio" name="size" id="sXL" value="42000">
+            <p>XL</p>
+          </label>
+        </div>
+        <p id="sizeV">32,000원</p>
+      </div>
+      <div class="menu">
+        <div class="pizzaWrap">
+          <div class="pizzaT">
+            <p class="round ">더블불고기피자</p>
+          </div>
+          <div class="pizzaT">
+            <p class="round">페퍼로니피자</p>
+          </div>
+          <div class="pizzaT">
+            <p class="round">쿼터치즈벅피자</p>
+          </div>
+          <div class="pizzaT">
+            <p class="round">메가디럭스피자</p>
+          </div>
+          <div class="pizzaT">
+            <p class="round active">갈릭쉬림플렉스피자</p>
+          </div>
+          <div class="pizzaT">
+            <p class="round">슈퍼콤비네이션피자</p>
+          </div>
+          <div class="pizzaT">
+            <p class="round">베이컨포테마요피자</p>
+          </div>
+          <div class="pizzaT">
+            <p class="round">바질버터관자피자</p>
+          </div>
+          <div class="pizzaT">
+            <p class="round">하와이안피자</p>
+          </div>
+          <div class="dotWrap">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot border"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+          <div class="pizzaL">
+            <div class="pizzaM">
+              <div class="pizzaS">
+                <img src="img/sub_1/pizza_doublebulgogi.png" class="pizzaP" alt="pizza">
+                <img src="img/sub_1/pizza_pepperoni.png" class="pizzaP" alt="pizza">
+                <img src="img/sub_1/pizza_quaterbug.png" class="pizzaP" alt="pizza">
+                <img src="img/sub_1/pizza_megadelux.png" class="pizzaP" alt="pizza">
+                <img src="img/sub_1/pizza_garlicshrimp.png" id="pizzaP" alt="pizza">
+                <img src="img/sub_1/pizza_supercombination.png" class="pizzaP" alt="pizza">
+                <img src="img/sub_1/pizza_baconpotato.png" class="pizzaP" alt="pizza">
+                <img src="img/sub_1/pizza_basilbutter.png" class="pizzaP" alt="pizza">
+                <img src="img/sub_1/pizza_hawaiian.png" class="pizzaP" alt="pizza">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pizzaSmallSize">
+          <button id="prev"><i class="fa-solid fa-chevron-left"></i></button>
+          <button id="next"><i class="fa-solid fa-chevron-right"></i></i></button>
+          <div class="pizzaSmall">
+            <img src="img/sub_1/pizza_doublebulgogi.png" class="pizzaP" alt="pizza">
+            <img src="img/sub_1/pizza_pepperoni.png" class="pizzaP" alt="pizza">
+            <img src="img/sub_1/pizza_quaterbug.png" class="pizzaP" alt="pizza">
+            <img src="img/sub_1/pizza_megadelux.png" class="pizzaP" alt="pizza">
+            <img src="img/sub_1/pizza_garlicshrimp.png" class="pizzaP" alt="pizza">
+            <img src="img/sub_1/pizza_supercombination.png" class="pizzaP" alt="pizza">
+            <img src="img/sub_1/pizza_baconpotato.png" class="pizzaP" alt="pizza">
+            <img src="img/sub_1/pizza_basilbutter.png" class="pizzaP" alt="pizza">
+            <img src="img/sub_1/pizza_hawaiian.png" class="pizzaP" alt="pizza">
+          </div>
+        </div>
+        <div class="pizzaName">
+          <div class="pizzaSub">
+            <h3>더블불고기피자</h3>
+            <h4>Double Bulgogi Pizza</h4>
+            <br>
+            <p>불고기 맛과 양이 업그레이드 된
+              전국민 취향저격 스테디셀러피자</p>
+          </div>
+          <div class="pizzaSub">
+            <h3>페퍼로니피자</h3>
+            <h4>Pepperoni Pizza</h4>
+            <br>
+            <p>7번가 BEST 메뉴
+              최상급 페퍼로니+100% 자연산 모짜렐라</p>
+          </div>
+          <div class="pizzaSub">
+            <h3>쿼터치즈벅피자</h3>
+            <h4>Quater Cheesebuck Pizza</h4>
+            <br>
+            <p>꾸덕한 체다치즈와 육즙폭발 고기,
+              아삭한 피클, 신선한 야채와 토마토까지!</p>
+          </div>
+          <div class="pizzaSub">
+            <h3>메가디럭스피자</h3>
+            <h4>Mega Deluxe Pizza</h4>
+            <br>
+            <p>미트x미트x미트, 극강의 미트 토핑!
+              육즙 가득한 고기와 신선한 야채의 조화</p>
+          </div>
+          <div class="pizzaSub">
+            <h3 id="nameB">갈릭쉬림플렉스피자</h3>
+            <h4>Garlic Shrimflex Pizza</h4>
+            <br>
+            <p>풍미를 한껏 끌어올린 갈릭소스와 스위트칠리소스에 탱글탱글 통새우까지!</p>
+          </div>
+          <div class="pizzaSub">
+            <h3>슈퍼콤비네이션피자</h3>
+            <h4>Super Combination Pizza</h4>
+            <br>
+            <p>프레쉬하고 다양한 토핑이 듬뿍
+              피자의 대명사 클래식의 정석</p>
+          </div>
+          <div class="pizzaSub">
+            <h3>베이컨포테마요피자</h3>
+            <h4>Bacon Potato Mayo Pizza</h4>
+            <br>
+            <p>포슬포슬 웨지감자가 한가득
+              짭짤한 베이컨과 고소한 마요네즈의 완벽 케미</p>
+          </div>
+          <div class="pizzaSub">
+            <h3>바질버터관자피자</h3>
+            <h4>Basil Butter Scallop Pizza</h4>
+            <br>
+            <p>매콤함 한스푼 들어간 바질크림에
+              버터에 빠진 관자가 듬~뿍</p>
+          </div>
+          <div class="pizzaSub">
+            <h3>하와이안피자</h3>
+            <h4>Hawaiian Pizza</h4>
+            <br>
+            <p>짭짤한 베이컨에 상큼한 파인애플
+              기분좋은 단짠단짠</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 옵선 선택창 -->
+    <div id="select">
+      <div class="option">
+        <div class="boxL">
+          <div class="dough">
+            <h4>도우 선택</h4>
+            <div class="edgelist">
+              <label>
+                <div class="edgeImg">
+                  <input type="radio" name="edge" id="" value="0" checked>
+                  <i></i>
+                  <img src="img/sub_1/dough1.png" alt="">
+                </div>
+                <p>석쇠 <br> (+0원)</p>
+              </label>
+              <label>
+                <div class="edgeImg">
+                  <input type="radio" name="edge" id="" value="0">
+                  <i></i>
+                  <img src="img/sub_1/dough2.png" alt="">
+                </div>
+                <p>씬바사삭 <br> (+0원)</p>
+              </label>
+              <label>
+                <div class="edgeImg">
+                  <input type="radio" name="edge" id="" value="3000">
+                  <i></i>
+                  <img src="img/sub_1/dough3.png" alt="">
+                </div>
+                <p>치즈링 <br> (+3,000원)</p>
+              </label>
+              <label>
+                <div class="edgeImg">
+                  <input type="radio" name="edge" id="" value="3000">
+                  <i></i>
+                  <img src="img/sub_1/dough4.png" alt="">
+                </div>
+                <p>리코타링 <br> (+3,000원)</p>
+              </label>
+              <label>
+                <div class="edgeImg">
+                  <input type="radio" name="edge" id="" value="4000">
+                  <i></i>
+                  <img src="img/sub_1/dough5.png" alt="">
+                </div>
+                <p>골드스윗 <br> (+4,000원)</p>
+              </label>
+            </div>
+          </div>
+          <div class="add">
+            <h4>추가 토핑</h4>
+            <ul>
+              <li>
+                <input type="checkbox" name="topping" id="t1" value="치즈 추가 80g" data-value="2500">
+                <label for="t1">
+                  <p>&nbsp;치즈 추가 80g (+2,500원)</p>
+                </label>
+              </li>
+              <li>
+                <input type="checkbox" name="topping" id="t2" value="페퍼로니 42g" data-value="2000">
+                <label for="t2">
+                  <p>&nbsp;페퍼로니 42g (+2,000원)</p>
+                </label>
+              </li>
+              <li>
+                <input type="checkbox" name="topping" id="t3" value="베이컨 42g" data-value="2000">
+                <label for="t3">
+                  <p>&nbsp;베이컨 42g (+2,000원)</p>
+                </label>
+              </li>
+              <li>
+                <input type="checkbox" name="topping" id="t4" value="올리브 32g" data-value="1000">
+                <label for="t4">
+                  <p>&nbsp;올리브 32g (+1,000원)</p>
+                </label>
+              </li>
+              <li>
+                <input type="checkbox" name="topping" id="t5" value="파인애플 80g" data-value="1500">
+                <label for="t5">
+                  <p>&nbsp;파인애플 80g (+1,500원)</p>
+                </label>
+              </li>
+              <li>
+                <input type="checkbox" name="topping" id="t6" value="브로콜리 35g" data-value="1500">
+                <label for="t6">
+                  <p>&nbsp;브로콜리 35g (+1,500원)</p>
+                </label>
+              </li>
+              <li>
+                <input type="checkbox" name="topping" id="t7" value="파프리카 60g" data-value="1500">
+                <label for="t7">
+                  <p>&nbsp;파프리카 60g (+1,500원)</p>
+                </label>
+              </li>
+              <li>
+                <input type="checkbox" name="topping" id="t8" value="할라피뇨 30g" data-value="1000">
+                <label for="t8">
+                  <p>&nbsp;할라피뇨 30g (+1,000원)</p>
+                </label>
+              </li>
+              <li>
+                <input type="checkbox" name="topping" id="t9" value="양파 45g" data-value="1500">
+                <label for="t9">
+                  <p>&nbsp;양파 45g (+1,500원)</p>
+                </label>
+              </li>
+              <li>
+                <input type="checkbox" name="topping" id="t10" value="스위트콘 30g" data-value="1500">
+                <label for="t10">
+                  <p>&nbsp;스위트콘 30g (+1,500원)</p>
+                </label>
+              </li>
+              <li>
+                <input type="checkbox" name="topping" id="t11" value="청피망 30g" data-value="1000">
+                <label for="t11">
+                  <p>&nbsp;청피망 30g (+1,000원)</p>
+                </label>
+              </li>
+              <li>
+                <input type="checkbox" name="topping" id="t12" value="버섯 60g" data-value="1500">
+                <label for="t12">
+                  <p>&nbsp;버섯 60g (+1,500원)</p>
+                </label>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="boxR">
+          <div class="count">
+            <h4>수 &nbsp;&nbsp;&nbsp;&nbsp; 량</h4>
+            <div class="countbox">
+              <button class="minus"> - </button>
+              <div id="result">1</div>
+              <button class="plus"> + </button>
+            </div>
+            <h6>최대 5개까지 선택할 수 있습니다.</h6>
+          </div>
+          <div class="receipt">
+            <div class="nameWrap">
+              <h4 id="nameS"></h4>
+            </div>
+            <div class="confirm">
+              <div class="addlist">
+              </div>
+            </div>
+            <div class="total">
+              <h4 id="totalPrice">32,000원</h4>
+            </div>
+
+            <div class="order">
+              <button class="delivery" onclick="location.href='#'">배달 주문</button>
+              <button class="takeaway" onclick="location.href='#'">포장 주문</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 정보 -->
+    <div id="info">
+      <div class="nut">
+        <h4>영양정보</h4>
+        <table>
+          <thead>
+            <th>엣지</th>
+            <th>1회 중량<span>(g)</span></th>
+            <th>1회 조각수</th>
+            <th>총 중량<span>(g)</span></th>
+            <th>열량 <br> <span>(kcal/1회)</span></th>
+            <th>당류 <br> <span>(g/1회)</span></th>
+            <th>단백질 <br><span> (g/1회)</span></th>
+            <th>포화지방 <br><span> (g/1회)</span></th>
+            <th>나트륨 <br> <span>(mg/1회)</span></th>
+          </thead>
+          <tbody>
+            <tr>
+              <th>석쇠</th>
+              <td>162</td>
+              <td>2</td>
+              <td>648</td>
+              <td>374</td>
+              <td>11</td>
+              <td>21</td>
+              <td>11</td>
+              <td>914</td>
+            </tr>
+            <tr>
+              <th>씬바샤삭</th>
+              <td>132</td>
+              <td>2</td>
+              <td>526</td>
+              <td>329</td>
+              <td>4</td>
+              <td>16</td>
+              <td>7</td>
+              <td>729</td>
+            </tr>
+            <tr>
+              <th>치즈링</th>
+              <td>187</td>
+              <td>2</td>
+              <td>748</td>
+              <td>434</td>
+              <td>11</td>
+              <td>26</td>
+              <td>13</td>
+              <td>1126</td>
+            </tr>
+            <tr>
+              <th>리코타링</th>
+              <td>182</td>
+              <td>2</td>
+              <td>728</td>
+              <td>437</td>
+              <td>13</td>
+              <td>24</td>
+              <td>14</td>
+              <td>1050</td>
+            </tr>
+            <tr>
+              <th>골드스윗</th>
+              <td>198</td>
+              <td>2</td>
+              <td>793</td>
+              <td>478</td>
+              <td>14</td>
+              <td>25</td>
+              <td>15</td>
+              <td>1038</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="allergy">
+        <h4>알레르기</h4>
+        <table>
+          <td>우유, 대두, 밀, 토마토, 쇠고기, 조개류(굴), 아황산류</td>
+        </table>
+      </div>
+      <div class="org">
+        <h4>원산지</h4>
+        <table>
+          <td>ㅡ</td>
+        </table>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="container">
+        <div id="discount">
+            <h3>7번가피자를 이용하세요.<br>
+                첫 주문시, 20% 할인해드립니다.</h3>
+            <input type="text" placeholder="우편번호">
+            <input type="email" name="email" id="email" placeholder="이메일 주소">
+            <button>로그인</button>
+            <div class="sns">
+                <a href="https://www.youtube.com/channel/UCIRnjEoqAnSdvoTdz23z5sw" target="_blank"><img
+                        src="img/main/youtube.png" alt="youtube"></a>
+                <a href="http://pf.kakao.com/_exjEvV" target="_blank"><img src="img/main/kakao.png"
+                        alt="kakaochannel"></a>
+                <a href="https://www.instagram.com/7th_street_pizza/" target="_blank"><img
+                        src="img/main/instagram.png" alt="instagram"></a>
+
+            </div>
+        </div>
+        <div id="footerNav">
+          <dl>
+              <dt><a href="sub1.html">메뉴</a></dt>
+              <dd><a href="sub1.html">온라인주문</a></dd>
+              <dd><a href="#">E쿠폰</a></dd>
+              <dd><a href="#">회사소개</a></dd>
+              <dd><a href="sub2.html">가맹문의</a></dd>
+              <dd><a href="#">이벤트</a></dd>
+          </dl>
+            <dl>
+                <dt>대표전화</dt>
+                <dd>1688.7887</dd>
+                <dd>창업문의</dd>
+                <dd>02.702.7020</dd>
+            </dl>
+        </div>
+        <div id="copyrights">
+            <span>Copyrights © 2019 by 7th Streetpizza. All rights reserved.</span>
+        </div>
+    </div>
+
+</footer>
+</body>
+
+</html>

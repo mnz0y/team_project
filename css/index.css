@@ -452,7 +452,7 @@ p:nth-child(5) {
     margin: 7% 0;
 }
 
-.busText button {
+.busText a {
     display: inline-block;
     width: 80%;
     background-color: transparent;
@@ -472,7 +472,7 @@ p:nth-child(5) {
     background-size: 400%;
 }
 
-.busText button:hover {
+.busText a:hover {
     background-position: 0;
     color: var(--beige);
 }
