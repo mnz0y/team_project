@@ -2,7 +2,7 @@
 
 /* 슬라이드 이미지 */
 #slideWrap {
-    width: 1900px;
+    width: 100%;
     height: 500px;
     margin: 0 auto;
     position: relative;
@@ -15,7 +15,7 @@
 }
 
 .slide li {
-    width: 1900px;
+    width: 25%;
     float: left;
 }
 
@@ -242,7 +242,7 @@
     width: 25px;
     height: 25px;
     display: inline-block;
-    padding: 3%;
+    padding: 1%;
 }
 
 .m small {
@@ -464,32 +464,17 @@ p:nth-child(5) {
     color: var(--darkred);
     margin-top: 7%;
     position: relative;
-    outline: none;
     border: 3px solid var(--darkred);
-    z-index: 5;
-    overflow: hidden;
-    transition: all 0.3s;
-}
-
-.busText button::before {
-    content: "";
-    position: absolute;
-    background-color: var(--darkred);
-    z-index: -5;
-    border-radius: 50px;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: -100%;
-    transition: all 0.6s;
+    transition: linear 1.5s;
+    background-image: linear-gradient(90deg, var(--darkred) 50%, transparent 50%);
+    background-position: 100%;
+    background-color: var(--beige);
+    background-size: 400%;
 }
 
 .busText button:hover {
+    background-position: 0;
     color: var(--beige);
-}
-
-.busText button:hover::before {
-    transform: translateX(100%);
 }
 
 .pizzaFix {
@@ -600,36 +585,21 @@ p:nth-child(5) {
     padding: 3%;
     border-radius: 50px;
     position: relative;
-    outline: none;
     border: 3px solid var(--darkred);
     color: var(--darkred);
-    background-color: transparent;
+    background-image: linear-gradient(90deg, var(--darkred) 50%, transparent 50%);
+    background-position: 100%;
+    background-color: var(--lightgreen);
+    background-size: 400%;
     font-weight: var(--weight-b);
-    transition: all 0.3s;
-    z-index: 5;
-    overflow: hidden;
-}
-
-.eventText button::before {
-    content: "";
-    position: absolute;
-    background-color: var(--darkred);
-    z-index: -5;
-    border-radius: 50px;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: -100%;
-    transition: all 0.6s;
+    transition: linear 1s;
 }
 
 .eventText button:hover {
     color: var(--beige);
+    background-position: 0;
 }
 
-.eventText button:hover::before {
-    transform: translateX(100%);
-}
 
 .eventwrap .left {
     display: none;

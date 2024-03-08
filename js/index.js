@@ -40,11 +40,57 @@ $(function () {
 // 반응형
 
 function detectMediaSize() {
-
-    //모바일
-    if ((window.matchMedia('(max-width:699px)').matches)) {
+    if ((window.matchMedia('(max-width:499px)').matches)){
         //슬라이드 이미지
         let w = $(window).innerWidth();
+        function prev() {
+            $('.slide li:last').prependTo('.slide');
+            $('.slide').css('margin-left', -w);
+            $('.slide').stop().animate({ marginLeft: 0 }, 600);
+        };
+
+        function next() {
+            $('.slide').stop().animate({ marginLeft: -w }, 600, function () {
+                $('.slide li:first').appendTo('.slide');
+                $('.slide').css({ marginLeft: 0 });
+            });
+        }
+        setInterval(next, 8000);
+
+        function left() {
+            $('.eventSlide li:last').prependTo('.eventSlide');
+            $('.eventSlide').css('margin-left', -w);
+            $('.eventSlide').stop().animate({ marginLeft: 0 }, 600);
+        }
+        function rig() {
+            $('.eventSlide').stop().animate({ marginLeft: -w }, 600, function () {
+                $('.eventSlide li:first').appendTo('.eventSlide');
+                $('.eventSlide').css({ marginLeft: 0 });
+            });
+        }
+        setInterval(rig, 8000);
+
+        $(function () {
+            //슬라이드 이미지
+            $('.prev').click(function () {
+                prev();
+            });
+            $('.next').click(function () {
+                next();
+            });
+            //이벤트
+            $('.left').click(function () {
+                left();
+            });
+            $('.rig').click(function () {
+                rig();
+            });
+        });
+    }
+    //모바일
+    else if ((window.matchMedia('(max-width:699px)').matches)) {
+        //슬라이드 이미지
+        let w = $(window).innerWidth()-16.5;
         function prev() {
             $('.slide li:last').prependTo('.slide');
             $('.slide').css('margin-left', -w);
@@ -62,7 +108,7 @@ function detectMediaSize() {
         //이벤트
         function left() {
             $('.eventSlide li:last').prependTo('.eventSlide');
-            $('.eventSlide').css('margin-left', w);
+            $('.eventSlide').css('margin-left', -w);
             $('.eventSlide').stop().animate({ marginLeft: 0 }, 600);
         }
         function rig() {
@@ -91,7 +137,7 @@ function detectMediaSize() {
         });
 
 
-    } 
+    }
 
     //테블릿
     else if (window.matchMedia('(min-width:700px) and (max-width:1015px)').matches) {
@@ -144,10 +190,10 @@ function detectMediaSize() {
 
 
     }
-    
+
     //데스크톱
     else if (window.matchMedia('(min-width:1016px) and (max-width:1700px)').matches) {
-        
+
         //슬라이드 이미지
         let w = $(window).innerWidth() - 17;
         function prev() {
@@ -218,20 +264,21 @@ function detectMediaSize() {
     }
     //기본웹사이트
     else {
-
         //슬라이드 이미지
+        let w = $(window).innerWidth() - 17;
         function prev() {
             $('.slide li:last').prependTo('.slide');
-            $('.slide').css('margin-left', -1900);
+            $('.slide').css('margin-left', -w);
             $('.slide').stop().animate({ marginLeft: 0 }, 800);
         }
         function next() {
-            $('.slide').stop().animate({ marginLeft: -1900 }, 800, function () {
+            $('.slide').stop().animate({ marginLeft: -w }, 800, function () {
                 $('.slide li:first').appendTo('.slide');
                 $('.slide').css({ marginLeft: 0 });
             });
         }
         setInterval(next, 8000);
+
 
         //이벤트
         function left() {
@@ -292,6 +339,7 @@ function detectMediaSize() {
 
 window.addEventListener('resize', detectMediaSize, false);
 detectMediaSize();
+
 
 
 $(function () {
