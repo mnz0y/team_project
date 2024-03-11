@@ -86,7 +86,6 @@ $(function(){
     $(window).scroll(function(){
         let ws=$(this).scrollTop();
         let s2= $('#section2').offset().top;
-        console.log(s2);
 
         if(ws<=s2-600){
             $('#section2 .titlebox').css("transform","translateY(100px)").css("opacity", "0");

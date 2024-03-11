@@ -160,7 +160,7 @@ function detectMediaSize() {
         //이벤트
         function left() {
             $('.eventSlide li:last').prependTo('.eventSlide');
-            $('.eventSlide').css('margin-left', w);
+            $('.eventSlide').css('margin-left', -w);
             $('.eventSlide').stop().animate({ marginLeft: 0 }, 800);
         }
         function rig() {
